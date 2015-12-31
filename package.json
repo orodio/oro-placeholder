@@ -1,7 +1,7 @@
 {
-  "name": "order66",
+  "name": "brick",
   "version": "0.0.1",
-  "description": "starting point for es6 node moudles",
+  "description": "starting point for npm moudles",
   "main": "lib/index.js",
   "jsnext:main": "src/index.js",
   "files": [
@@ -12,17 +12,17 @@
   "scripts": {
     "clean": "rimraf lib dist coverage",
     "build:lib": "babel src -d lib",
-    "build:umd": "webpack src/index.js dist/order66.js --config webpack.config.dev.js",
-    "build:umd:min": "webpack src src/index.js dist/order66.min.js --config webpack.config.prod.js",
+    "build:umd": "webpack src/index.js dist/brick.js --config webpack.config.dev.js",
+    "build:umd:min": "webpack src src/index.js dist/brick.min.js --config webpack.config.prod.js",
     "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
     "prepublish": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "github.com/orodio/order66"
+    "url": "github.com/DrawboardLtd/brick"
   },
   "keywords": [
-    "order66"
+    "Drawboard"
   ],
   "author": "orodio",
   "license": "MIT",
